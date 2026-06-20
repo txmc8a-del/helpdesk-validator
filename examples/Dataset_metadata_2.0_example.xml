@@ -24,16 +24,16 @@ CBH<?xml version="1.0" encoding="UTF-8"?>
    
 <!--TG Requirement C.6: metadata/2.0/req/common/md-point-of-contact: Point of contact for the responsible party for the provided metadata shall be given using element gmd:MD_metadata/gmd:contact/gmd:CI_ResponsibleParty. The multiplicity of this element is 1..*. The gmd:CI_ResponsibleParty element shall contain the following child elements: The name of the responsible organisation shall be provided as the value of gmd:organisationName element with a Non-empty Free Text Element content. The email address of the organisation shall be provided as the value of gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress element with a Non-empty Free Text Element containing a functioning email address of the responsible party. The value of gmd:role/gmd:CI_RoleCode shall point to the value "pointOfContact" of [ISO 19139] code list CI_RoleCode.--> 
   <gmd:contact>
-    <gmd:CI_ResponsibleParty>
+    <gmd:CI_ResponsibleParty>Jazmyne J Marrujo
       <gmd:organisationName>
         <gco:CharacterString>MyOrganisation</gco:CharacterString>
       </gmd:organisationName>
-      <gmd:contactInfo>
+      <gmd:contactInfo>4085694325
         <gmd:CI_Contact>
-          <gmd:address>
+          <gmd:address>2791 story rd san jose ca 95127
             <gmd:CI_Address>
               <gmd:electronicMailAddress>
-                <gco:CharacterString>info@my-organisation.eu</gco:CharacterString>
+                <gco:CharacterString>marrujojazmyne@my-organisation.eu</gco:CharacterString>
               </gmd:electronicMailAddress>
             </gmd:CI_Address>
           </gmd:address>
@@ -47,7 +47,7 @@ CBH<?xml version="1.0" encoding="UTF-8"?>
   
 <!--TG Requirement C.7: metadata/2.0/req/common/md-date: The latest update date of the metadata description shall be given for each metadata record. It shall be encoded using the gmd:MD_Metadata/gmd:dateStamp element. If no updates to the metadata have been made since publishing it, the creation date of the metadata shall be used instead. The multiplicity of this element is 1.-->
   <gmd:dateStamp>
-    <gco:DateTime>2019-05-15T09:00:00</gco:DateTime> <!-- To also specify the time zone (optional), the value would be e.g. 2019-05-15T09:00:00+02:00 -->
+    <gco:DateTime>2026-06-20T09:00:00</gco:DateTime> <!-- To also specify the time zone (optional), the value would be e.g. 2019-05-15T09:00:00+02:00 -->
   </gmd:dateStamp>
   
   <!--TG Requirement 2.1: metadata/2.0/req/isdss/crs: The coordinate reference system(s) used in the described data set or data set series shall be given using element gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier.
